@@ -14,10 +14,8 @@ namespace PercentageOfVolume
             //Leitura da entrada:
             Console.Write("Digite o total negociado: ");
             int.TryParse(Console.ReadLine(), out int totalNegociado);
-            Console.WriteLine(totalNegociado);
             Console.Write("Digite a porcentagem desejada, se for 10% digite 0,1: ");
             decimal.TryParse(Console.ReadLine(), out decimal porcentagem);
-            Console.WriteLine(porcentagem);
 
             //Cálculo da Percentage of Volume:
             int pov = funcaoRetornaQuantidadePOV(porcentagem, totalNegociado);
